@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Practical13Test2.Models.Countemp>
+
+
+
+<table class="table">
+    <tr>
+
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.sum)
+        </th>
+    </tr>
+
+    @foreach (var i in Model)
+    {
+
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => i.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => i.sum)
+            </td>
+        </tr>
+
+    }
+</table>
